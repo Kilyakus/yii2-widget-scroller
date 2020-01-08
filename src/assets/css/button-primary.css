@@ -1,0 +1,52 @@
+.btn-primary {color:#fff;background-color:#2986FF;border-color:#2986FF;}
+  .btn-primary:hover {color:#fff;background-color:#539EFF;border-color:#287CEA;}
+  .btn-primary:focus, .btn-primary.focus {box-shadow:0 0 0 0.2rem rgba(113, 126, 226, 0.5);}
+  .btn-primary.disabled, .btn-primary:disabled {color:#fff;background-color:#2986FF;border-color:#2986FF;}
+  .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+  .show > .btn-primary.dropdown-toggle {color:#fff;background-color:#2e40d4;border-color:#293ccc;}
+    .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-primary.dropdown-toggle:focus {box-shadow:0 0 0 0.2rem rgba(113, 126, 226, 0.5);}
+  .btn-primary + .btn.dropdown-toggle {position:relative;}
+    .btn-primary + .btn.dropdown-toggle:before {display:block;content:' ';border-left:1px solid #ffffff;position:absolute;top:3px;left:-1px;bottom:3px;opacity:0.3;}
+    .btn-primary + .btn.dropdown-toggle:hover:before, .btn-primary + .btn.dropdown-toggle:focus:before, .btn-primary + .btn.dropdown-toggle.active:before {display:none;}
+
+.btn-outline-primary {color:#2986FF;border-color:#2986FF;}
+  .btn-outline-primary:hover {color:#ffffff;background-color:#2986FF;border-color:#2986FF;}
+  .btn-outline-primary:focus, .btn-outline-primary.focus {box-shadow:0 0 0 0.2rem rgba(88, 103, 221, 0.5);}
+  .btn-outline-primary.disabled, .btn-outline-primary:disabled {color:#2986FF;background-color:transparent;}
+  .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-primary.dropdown-toggle {color:#fff;background-color:#2986FF;border-color:#2986FF;}
+    .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-outline-primary.dropdown-toggle:focus {box-shadow:0 0 0 0.2rem rgba(88, 103, 221, 0.5);}
+
+.show > .btn-hover-primary, .btn-hover-primary.active, .btn-hover-primary:active, .btn-hover-primary:hover {color:#ffffff;background-color:#2986FF;border-color:#2986FF;}
+.btn-outline-hover-primary.btn-clean {border:1px solid transparent;}
+.show > .btn-outline-hover-primary, .btn-outline-hover-primary.active, .btn-outline-hover-primary:active, .btn-outline-hover-primary:hover {color:#2986FF;border-color:#2986FF;background-color:transparent;}
+
+.btn-font-primary {color:#2986FF;}
+.show > .btn-font-hover-primary, .btn-font-hover-primary.active, .btn-font-hover-primary:active, .btn-font-hover-primary:hover {color:#2986FF;}
+
+.btn.btn-primary.btn-elevate {box-shadow:0px 4px 16px 0px rgba(88, 103, 221, 0.15);}
+  .show > .btn.btn-primary.btn-elevate, .btn.btn-primary.btn-elevate:focus, .btn.btn-primary.btn-elevate.active, .btn.btn-primary.btn-elevate:active, .btn.btn-primary.btn-elevate:hover {box-shadow:0px 9px 16px 0px rgba(88, 103, 221, 0.25) !important;}
+    .show > .btn.btn-primary.btn-elevate.btn-sm, .btn-group-sm.show > .btn.btn-primary.btn-elevate, .btn.btn-primary.btn-elevate:focus.btn-sm, .btn-group-sm > .btn.btn-primary.btn-elevate:focus, .btn.btn-primary.btn-elevate.active.btn-sm, .btn-group-sm > .btn.btn-primary.btn-elevate.active, .btn.btn-primary.btn-elevate:active.btn-sm, .btn-group-sm > .btn.btn-primary.btn-elevate:active, .btn.btn-primary.btn-elevate:hover.btn-sm, .btn-group-sm > .btn.btn-primary.btn-elevate:hover {box-shadow:0px 6px 16px 0px rgba(88, 103, 221, 0.25) !important;}
+
+.show > .btn.btn-primary.btn-elevate-hover, .btn.btn-primary.btn-elevate-hover.active, .btn.btn-primary.btn-elevate-hover:focus, .btn.btn-primary.btn-elevate-hover:active, .btn.btn-primary.btn-elevate-hover:hover {box-shadow:0px 9px 16px 0px rgba(88, 103, 221, 0.25) !important;}
+  .show > .btn.btn-primary.btn-elevate-hover.btn-sm, .btn-group-sm.show > .btn.btn-primary.btn-elevate-hover, .btn.btn-primary.btn-elevate-hover.active.btn-sm, .btn-group-sm > .btn.btn-primary.btn-elevate-hover.active, .btn.btn-primary.btn-elevate-hover:focus.btn-sm, .btn-group-sm > .btn.btn-primary.btn-elevate-hover:focus, .btn.btn-primary.btn-elevate-hover:active.btn-sm, .btn-group-sm > .btn.btn-primary.btn-elevate-hover:active, .btn.btn-primary.btn-elevate-hover:hover.btn-sm, .btn-group-sm > .btn.btn-primary.btn-elevate-hover:hover {box-shadow:0px 6px 16px 0px rgba(88, 103, 221, 0.25) !important;}
+
+.btn.btn-label-primary {background-color:rgba(88, 103, 221, 0.1);color:#2986FF;cursor:text !important;}
+
+.btn.btn-label-primary-o2 {background-color:rgba(88, 103, 221, 0.2);color:#2986FF;cursor:text !important;}
+
+a.btn.btn-label-primary,
+button.btn.btn-label-primary,
+input.btn.btn-label-primary {cursor:pointer !important;}
+  a.btn.btn-label-primary:focus, a.btn.btn-label-primary:hover, a.btn.btn-label-primary.active,
+  button.btn.btn-label-primary:focus,
+  button.btn.btn-label-primary:hover,
+  button.btn.btn-label-primary.active,
+  input.btn.btn-label-primary:focus,
+  input.btn.btn-label-primary:hover,
+  input.btn.btn-label-primary.active {background-color:#2986FF;color:#ffffff;}
+
+.btn.btn-icon.btn-primary i {color:#ffffff;}
+.btn.btn-icon.btn-primary:focus i, .btn.btn-icon.btn-primary:hover i, .btn.btn-icon.btn-primary.active i {color:#ffffff;}

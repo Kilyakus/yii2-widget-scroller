@@ -1,0 +1,4 @@
+.btn.btn-default {border:0;background:transparent;color:#74788d;border:1px solid #e8ecfa;}
+  .btn.btn-default i {color:#5286ca;}
+  .show > .btn.btn-default, .btn.btn-default.active, .btn.btn-default:active, .btn.btn-default:hover {color:#ffffff;background:#2986FF;border-color:#2986FF;}
+    .show > .btn.btn-default i, .btn.btn-default.active i, .btn.btn-default:active i, .btn.btn-default:hover i {color:#ffffff;}

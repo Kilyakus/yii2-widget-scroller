@@ -1,0 +1,24 @@
+.btn-transparent {background-color:transparent;border:1px solid rgba(255,255,255,0.2);color:#FFF;}
+  .btn-transparent:hover {color:#FFF;background-color:rgba(255,255,255,0.1);border-color:#FFF;}
+  .btn-transparent:focus, .btn-transparent.focus {background-color:rgba(0,0,0,0.1);border:1px solid rgba(255,255,255,0.6);box-shadow:0 0 0 0.2rem rgba(196, 197, 209, 0.5);}
+  .btn-transparent.disabled, .btn-transparent:disabled {color:#FFF;background-color:#e1e1ef;border-color:#e1e1ef;}
+  .btn-transparent:not(:disabled):not(.disabled):active, .btn-transparent:not(:disabled):not(.disabled).active,
+  .show > .btn-transparent.dropdown-toggle {color:#FFF;}
+    .btn-transparent:not(:disabled):not(.disabled):active:focus, .btn-transparent:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-transparent.dropdown-toggle:focus {box-shadow:0 0 0 0.2rem rgba(196, 197, 209, 0.5);}
+
+
+.show > .btn-transparent.dropdown-toggle, .btn-transparent:focus, .btn-transparent.active, .btn-transparent:active, .btn-transparent:hover {background-color:rgba(255,255,255,0.2);color:#FFF;border-color:#FFF;}
+
+
+.btn-outline-transparent {color:#e1e1ef;border-color:#e1e1ef;}
+  .btn-outline-transparent:hover {color:#FFF;background-color:transparent;border-color:#FFF;}
+  .btn-outline-transparent:focus, .btn-outline-transparent.focus {background-color:rgba(0,0,0,0.1);border:1px solid rgba(255,255,255,0.6);box-shadow:0 0 0 0.2rem rgba(225, 225, 239, 0.5);}
+  .btn-outline-transparent.disabled, .btn-outline-transparent:disabled {color:#e1e1ef;background-color:transparent;}
+  .btn-outline-transparent:not(:disabled):not(.disabled):active, .btn-outline-transparent:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-transparent.dropdown-toggle {color:#FFF;background-color:#e1e1ef;border-color:#e1e1ef;}
+    .btn-outline-transparent:not(:disabled):not(.disabled):active:focus, .btn-outline-transparent:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-outline-transparent.dropdown-toggle:focus {box-shadow:0 0 0 0.2rem rgba(225, 225, 239, 0.5);}
+
+.btn.btn-outline-transparent {color:#494988;}
+  .show > .btn.btn-outline-transparent, .btn.btn-outline-transparent.active, .btn.btn-outline-transparent:active, .btn.btn-outline-transparent:hover {background-color:#e1e1ef;}

@@ -1,0 +1,51 @@
+.btn-brand {color:#fff;background-color:#2986FF;border-color:#2986FF;color:#ffffff;}
+  .btn-brand:hover {color:#fff;background-color:#564ec0;border-color:#206bcc;}
+  .btn-brand:focus, .btn-brand.focus {box-shadow:0 0 0 0.2rem rgba(134, 128, 210, 0.5);}
+  .btn-brand.disabled, .btn-brand:disabled {color:#fff;background-color:#2986FF;border-color:#2986FF;}
+  .btn-brand:not(:disabled):not(.disabled):active, .btn-brand:not(:disabled):not(.disabled).active,
+  .show > .btn-brand.dropdown-toggle {color:#fff;background-color:#206bcc;border-color:#4940b4;}
+    .btn-brand:not(:disabled):not(.disabled):active:focus, .btn-brand:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-brand.dropdown-toggle:focus {box-shadow:0 0 0 0.2rem rgba(134, 128, 210, 0.5);}
+  .btn-brand + .btn.dropdown-toggle {position:relative;}
+    .btn-brand + .btn.dropdown-toggle:before {display:block;content:' ';border-left:1px solid #ffffff;position:absolute;top:3px;left:-1px;bottom:3px;opacity:0.3;}
+    .btn-brand + .btn.dropdown-toggle:hover:before, .btn-brand + .btn.dropdown-toggle:focus:before, .btn-brand + .btn.dropdown-toggle.active:before {display:none;}
+
+.btn-outline-brand {color:#2986FF;border-color:#2986FF;}
+  .btn-outline-brand:hover {color:#ffffff;background-color:#2986FF;border-color:#2986FF;}
+  .btn-outline-brand:focus, .btn-outline-brand.focus {box-shadow:0 0 0 0.2rem rgba(113, 106, 202, 0.5);}
+  .btn-outline-brand.disabled, .btn-outline-brand:disabled {color:#2986FF;background-color:transparent;}
+  .btn-outline-brand:not(:disabled):not(.disabled):active, .btn-outline-brand:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-brand.dropdown-toggle {color:#fff;background-color:#2986FF;border-color:#2986FF;}
+    .btn-outline-brand:not(:disabled):not(.disabled):active:focus, .btn-outline-brand:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-outline-brand.dropdown-toggle:focus {box-shadow:0 0 0 0.2rem rgba(113, 106, 202, 0.5);}
+
+.show > .btn-hover-brand, .btn-hover-brand.active, .btn-hover-brand:active, .btn-hover-brand:hover {color:#ffffff;background-color:#2986FF;border-color:#2986FF;}
+.btn-outline-hover-brand.btn-clean {border:1px solid transparent;}
+.show > .btn-outline-hover-brand, .btn-outline-hover-brand.active, .btn-outline-hover-brand:active, .btn-outline-hover-brand:hover {color:#2986FF;border-color:#2986FF;background-color:transparent;}
+.btn-font-brand {color:#2986FF;}
+.show > .btn-font-hover-brand, .btn-font-hover-brand.active, .btn-font-hover-brand:active, .btn-font-hover-brand:hover {color:#2986FF;}
+
+.btn.btn-brand.btn-elevate {box-shadow:0px 4px 16px 0px rgba(113, 106, 202, 0.15);}
+  .show > .btn.btn-brand.btn-elevate, .btn.btn-brand.btn-elevate:focus, .btn.btn-brand.btn-elevate.active, .btn.btn-brand.btn-elevate:active, .btn.btn-brand.btn-elevate:hover {box-shadow:0px 9px 16px 0px rgba(113, 106, 202, 0.25) !important;}
+    .show > .btn.btn-brand.btn-elevate.btn-sm, .btn-group-sm.show > .btn.btn-brand.btn-elevate, .btn.btn-brand.btn-elevate:focus.btn-sm, .btn-group-sm > .btn.btn-brand.btn-elevate:focus, .btn.btn-brand.btn-elevate.active.btn-sm, .btn-group-sm > .btn.btn-brand.btn-elevate.active, .btn.btn-brand.btn-elevate:active.btn-sm, .btn-group-sm > .btn.btn-brand.btn-elevate:active, .btn.btn-brand.btn-elevate:hover.btn-sm, .btn-group-sm > .btn.btn-brand.btn-elevate:hover {box-shadow:0px 6px 16px 0px rgba(113, 106, 202, 0.25) !important;}
+
+.show > .btn.btn-brand.btn-elevate-hover, .btn.btn-brand.btn-elevate-hover.active, .btn.btn-brand.btn-elevate-hover:focus, .btn.btn-brand.btn-elevate-hover:active, .btn.btn-brand.btn-elevate-hover:hover {box-shadow:0px 9px 16px 0px rgba(113, 106, 202, 0.25) !important;}
+  .show > .btn.btn-brand.btn-elevate-hover.btn-sm, .btn-group-sm.show > .btn.btn-brand.btn-elevate-hover, .btn.btn-brand.btn-elevate-hover.active.btn-sm, .btn-group-sm > .btn.btn-brand.btn-elevate-hover.active, .btn.btn-brand.btn-elevate-hover:focus.btn-sm, .btn-group-sm > .btn.btn-brand.btn-elevate-hover:focus, .btn.btn-brand.btn-elevate-hover:active.btn-sm, .btn-group-sm > .btn.btn-brand.btn-elevate-hover:active, .btn.btn-brand.btn-elevate-hover:hover.btn-sm, .btn-group-sm > .btn.btn-brand.btn-elevate-hover:hover {box-shadow:0px 6px 16px 0px rgba(113, 106, 202, 0.25) !important;}
+
+.btn.btn-label-brand {background-color:rgba(113, 106, 202, 0.1);color:#2986FF;cursor:text !important;}
+
+.btn.btn-label-brand-o2 {background-color:rgba(113, 106, 202, 0.2);color:#2986FF;cursor:text !important;}
+
+a.btn.btn-label-brand,
+button.btn.btn-label-brand,
+input.btn.btn-label-brand {cursor:pointer !important;}
+  a.btn.btn-label-brand:focus, a.btn.btn-label-brand:hover, a.btn.btn-label-brand.active,
+  button.btn.btn-label-brand:focus,
+  button.btn.btn-label-brand:hover,
+  button.btn.btn-label-brand.active,
+  input.btn.btn-label-brand:focus,
+  input.btn.btn-label-brand:hover,
+  input.btn.btn-label-brand.active {background-color:#2986FF;color:#ffffff;}
+
+  .btn.btn-icon.btn-brand i {color:#ffffff;}
+  .btn.btn-icon.btn-brand:focus i, .btn.btn-icon.btn-brand:hover i, .btn.btn-icon.btn-brand.active i {color:#ffffff;}

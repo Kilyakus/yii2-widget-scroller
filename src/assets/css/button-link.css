@@ -1,0 +1,4 @@
+.btn-link {font-weight:400;color:#2986FF;text-decoration:none;}
+  .btn-link:hover {color:#2739c1;text-decoration:underline;}
+  .btn-link:focus, .btn-link.focus {text-decoration:underline;box-shadow:none;}
+  .btn-link:disabled, .btn-link.disabled {color:#6c757d;pointer-events:none;}
