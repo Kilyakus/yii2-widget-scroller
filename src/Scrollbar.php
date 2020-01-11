@@ -1,19 +1,15 @@
 <?php
-namespace kilyakus\widget\scroller;
+namespace kilyakus\widget\scrollbar;
 
 use Yii;
 use yii\helpers\Html;
 use yii\helpers\Inflector;
 use yii\helpers\ArrayHelper;
 
-class Scroll extends \kilyakus\widgets\Widget
+class Scrollbar extends \kilyakus\widgets\Widget
 {
 	const TYPE_PERFECT = 'perfect-scrollbar';
 	const TYPE_MCUSTOM = 'mCustomScrollbar';
-
-	const FORMAT_PX = 'px';
-	const FORMAT_PERCENT = '%';
-	const FORMAT_VH = 'vh';
 
 	public $tagName = 'div';
 

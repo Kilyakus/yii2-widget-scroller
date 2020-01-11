@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "kilyakus\\widget\\scroller\\": "src"
+            "kilyakus\\widget\\scrollbar\\": "src"
         }
     }
 }
