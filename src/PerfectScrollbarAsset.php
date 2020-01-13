@@ -1,21 +1,22 @@
 <?php
-namespace kilyakus\scrollbar;
+namespace kilyakus\widget\scrollbar;
 
 class PerfectScrollbarAsset extends \yii\web\AssetBundle
 {
     public function init()
     {
-        $this->sourcePath = __DIR__ . '/assets';
+        $this->sourcePath = __DIR__ . '/assets/perfect-scrollbar';
     }
     public $css = [
-        'css/perfect-scrollbar.css',
+        'css/widget-perfectscrollbar.css',
     ];
     public $js = [
-        'dist/perfect-scrollbar.js',
+        'js/widget-perfectscrollbar.js',
+        'js/widget-perfectscrollbar-init.js',
     ];
     public $depends = [
     ];
     public $jsOptions = array(
-        'position' => \yii\web\View::POS_HEAD
+        'position' => \yii\web\View::POS_END
     );
 }

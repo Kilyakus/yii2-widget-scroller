@@ -8,8 +8,10 @@ use yii\helpers\ArrayHelper;
 
 class Scrollbar extends \kilyakus\widgets\Widget
 {
-	const TYPE_PERFECT = 'perfect-scrollbar';
-	const TYPE_MCUSTOM = 'mCustomScrollbar';
+	const TYPE_PS = 'perfect';
+	const TYPE_MC = 'mcustom';
+
+	public $type = self::TYPE_PS;
 
 	public $tagName = 'div';
 
@@ -24,18 +26,15 @@ class Scrollbar extends \kilyakus\widgets\Widget
 	public $minHeight;
 
 	protected static $_inbuiltTypes = [
-		self::TYPE_PERFECT,
-		self::TYPE_MCUSTOM,
+		self::TYPE_PS,
+		self::TYPE_MC,
 	];
 
 	public function init()
 	{
 		parent::init();
 
-        if (empty($this->pluginOptions['height']))
-        {
-            Yii::$app->session->setFlash('error', 'Widgets/' . (new \ReflectionClass(get_class($this)))->getShortName() . ': ' . Yii::t('easyii', 'The "height" option of the scroller is required.'));
-        }
+		// $this->height = ($this->maxHeight && !$this->height) ? $this->maxHeight : $this->height;
 
 		echo '<!-- begin:: Widgets/Scroller -->';
 
@@ -79,9 +78,26 @@ class Scrollbar extends \kilyakus\widgets\Widget
 	{
 		$view = $this->getView();
 		// ButtonAsset::register($view);
-		// if (in_array($this->type, self::$_inbuiltTypes)) {
-		// 	$bundleClass = __NAMESPACE__ . '\Theme' . Inflector::id2camel($this->type) . 'Asset';
-		// 	$bundleClass::register($view);
-		// }
+		if (in_array($this->type, self::$_inbuiltTypes)) {
+			$bundleClass = __NAMESPACE__ . '\\' . Inflector::id2camel($this->type) . 'Scrollbar' . 'Asset';
+			$bundleClass::register($view);
+		}
+
+		$view->registerJs("$('[data-scroll=\"true\"]').each(function() {
+    var el = $(this);
+    PS_WIDGET.scrollInit(this, {
+        mobileNativeScroll: true,
+        handleWindowResize: true,
+        rememberPosition: (el.data('remember-position') == 'true' ? true : false),
+        height: function() {
+            if (PS_WIDGET.isInResponsiveRange('tablet-and-mobile') && el.data('mobile-height')) {
+                return el.data('mobile-height');
+            } else {
+                return el.data('height');
+            }
+        }
+    });
+});", $view::POS_END, 'widget-ps');
+
 	}
 }
