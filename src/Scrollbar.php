@@ -19,11 +19,11 @@ class Scrollbar extends \kilyakus\widgets\Widget
 
 	public $pluginOptions = [];
 
-	public $height;
+	public $height = 'auto';
 
 	public $maxHeight;
 
-	public $minHeight;
+	public $minHeight = 'auto';
 
 	protected static $_inbuiltTypes = [
 		self::TYPE_PS,
@@ -51,28 +51,28 @@ class Scrollbar extends \kilyakus\widgets\Widget
 	}
 
 
-    private function _renderScrollerBegin()
-    {
-        Html::addCssStyle($this->options, ['height' => $this->height]);
-        Html::addCssStyle($this->options, ['max-height' => $this->maxHeight]);
-        Html::addCssStyle($this->options, ['min-height' => $this->minHeight]);
+	private function _renderScrollerBegin()
+	{
+		Html::addCssStyle($this->options, ['height' => $this->height]);
+		Html::addCssStyle($this->options, ['max-height' => $this->maxHeight]);
+		Html::addCssStyle($this->options, ['min-height' => $this->minHeight]);
 
-        echo Html::beginTag(
-                $this->tagName, ArrayHelper::merge(
-                    [
-                    	'data-scroll' => 'true',
-                    	'data-height' => $this->height,
-                    	'data-mobile-height' => $this->height
-                    ],
-                    $this->options
-                )
-        );
-    }
+		echo Html::beginTag(
+				$this->tagName, ArrayHelper::merge(
+					[
+						'data-scroll' => 'true',
+						'data-height' => $this->height,
+						'data-mobile-height' => $this->height
+					],
+					$this->options
+				)
+		);
+	}
 
-    private function _renderScrollerEnd()
-    {
-        echo Html::endTag($this->tagName);
-    }
+	private function _renderScrollerEnd()
+	{
+		echo Html::endTag($this->tagName);
+	}
 
 	public function registerAssetBundle()
 	{
@@ -84,20 +84,20 @@ class Scrollbar extends \kilyakus\widgets\Widget
 		}
 
 		$view->registerJs("$('[data-scroll=\"true\"]').each(function() {
-    var el = $(this);
-    PS_WIDGET.scrollInit(this, {
-        mobileNativeScroll: true,
-        handleWindowResize: true,
-        rememberPosition: (el.data('remember-position') == 'true' ? true : false),
-        height: function() {
-            if (PS_WIDGET.isInResponsiveRange('tablet-and-mobile') && el.data('mobile-height')) {
-                return el.data('mobile-height');
-            } else {
-                return el.data('height');
-            }
-        }
-    });
-});", $view::POS_END, 'widget-ps');
+			var el = $(this);
+			PS_WIDGET.scrollInit(this, {
+				mobileNativeScroll: true,
+				handleWindowResize: true,
+				rememberPosition: (el.data('remember-position') == 'true' ? true : false),
+				height: function() {
+					if (PS_WIDGET.isInResponsiveRange('tablet-and-mobile') && el.data('mobile-height')) {
+						return el.data('mobile-height');
+					} else {
+						return el.data('height');
+					}
+				}
+			});
+		});", $view::POS_END, 'widget-ps');
 
 	}
 }

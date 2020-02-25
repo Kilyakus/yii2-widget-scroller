@@ -229,7 +229,7 @@ var PS_WIDGET = function() {
                         ps = PS_WIDGET.data(element).remove('ps');
                     } else if (height > 0){
                         PS_WIDGET.css(element, 'overflow', 'auto');
-                        PS_WIDGET.css(element, 'height', height + 'px');
+                        PS_WIDGET.css(element, 'height', height + (typeof height === "string" || height instanceof String) ? 'px' : '');
                     }
 
                     return;
