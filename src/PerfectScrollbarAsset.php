@@ -11,7 +11,7 @@ class PerfectScrollbarAsset extends \yii\web\AssetBundle
         'css/widget-perfectscrollbar.css',
     ];
     public $js = [
-        'js/widget-perfectscrollbar.js',
+        'js/widget-perfectscrollbar.min.js',
         'js/widget-perfectscrollbar-init.js',
     ];
     public $depends = [
